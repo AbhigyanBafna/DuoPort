@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+    color: black;
+  }
+  
+  /* Navbar */
+  
+  .header{
+    height: 10rem;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: center;
+    background: #EEEEEE;
+    position: fixed;
+    height: 10rem;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  .navList li a{
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+  }
+  
+  .navList li{
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    display: inline;
+    padding: 0rem 1.5rem;
+  }
+  
+  .navList{
+    margin-right: 2rem;
+  }
+  
+  .navList li a:hover{
+    color: #04D3DD;
+  }
+  
+  .logo{
+    margin-top: -5rem;
+    cursor: pointer;
+    width: 20rem;
+  }
+
+
+.login-box {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: black;
+  box-sizing: border-box;
+  /* box-shadow: 0 15px 25px rgba(0, 0, 0, .6); */
+  border-radius: 10px;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.login-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+
+.forgot__pass {
+  font-size: 12px;
+  color: #5b6b8b;
+  float: right;
+}
+
+.btn__submit {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 20px;
+  letter-spacing: 4px
+}
+
+.btn__submit:hover {
+  background: #03e9f4;
+  color: rgb(10, 11, 21);
+  border-radius: 5px;
+
+}
+
+.btn__submit span {
+  position: absolute;
+  display: block;
+}
