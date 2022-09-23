@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   font-family: Roboto, sans-serif;
@@ -7,7 +7,7 @@
 
 /* Navbar */
 
-.header{
+.header {
   height: 3rem;
 }
 
@@ -15,44 +15,41 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #EEEEEE;
+  background: #eeeeee;
   position: fixed;
   height: 5rem;
   width: 100%;
   z-index: 10;
 }
 
-.navList li a{
+.navList li a {
   transition: all 0.3s ease 0s;
   text-decoration: none;
 }
 
-.navList li{
-  font-family: 'Inter', sans-serif;
+.navList li {
+  font-family: "Inter", sans-serif;
   font-size: 1rem;
   font-weight: bold;
   display: inline;
   padding: 0rem 1.5rem;
 }
 
-.navList{
+.navList {
   margin-right: 2rem;
 }
 
-.navList li a:hover{
-  color: #04D3DD;
+.navList li a:hover {
+  color: #04d3dd;
 }
 
-.logo{
+.logo {
   cursor: pointer;
   width: 8.75rem;
   margin: 0px 4.25rem;
 }
 
-
-
-
-.mainContainer{
+.mainContainer {
   margin-top: 5rem;
   margin-left: 5rem;
 }
@@ -68,7 +65,7 @@ button::after {
 button {
   background: none;
   cursor: pointer;
-  border: 3px solid #00D8FF;
+  border: 3px solid #00d8ff;
   border-radius: 5px;
   display: inline-block;
   font-size: 1.6em;
@@ -81,8 +78,8 @@ button {
 
 button::before,
 button::after {
-  background: #00D8FF;
-  content: '';
+  background: #00d8ff;
+  content: "";
   position: absolute;
   z-index: -1;
 }
@@ -105,7 +102,18 @@ button:hover {
   width: 100%;
 }
 
-form{
+form {
   display: inline;
   margin-left: 100px;
+}
+
+@media only screen and (max-width: 650px) {
+  .mainContainer {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  button {
+    padding: 1em 3em;
+  }
 }

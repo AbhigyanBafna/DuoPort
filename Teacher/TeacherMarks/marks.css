@@ -1,138 +1,137 @@
 input[type="text"],
-input[type="number"]{
-    background-color: #eeeeee;
-    border-radius: 4px;
-    border-color: black;
+input[type="number"] {
+  background-color: #eeeeee;
+  border-radius: 4px;
+  border-color: black;
 }
-td{
-    border: 1px solid black;
+td {
+  border: 1px solid black;
 }
 
-.table{
-    border: 1px solid black;
-    border-collapse: collapse;
-    margin-left: 7px;
-    padding-left: 20px;
-    padding-right: 20px;
-
-
-}   
-
-
-.ele{
-    text-align: center;
-    border: 1px solid black;
-    border-left: 1px solid black ;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-collapse: collapse;
+.table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin-left: 7px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
-*{
-    margin: 0;
-    padding: 0;
-    font-family: Roboto, sans-serif;
-    color: black;
-  }
-  
-  /* Navbar */
-  
-  .header{
-    height: 10rem;
-  }
-  
-  .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #EEEEEE;
-    position: fixed;
-    height: 5rem;
-    width: 100%;
-    z-index: 10;
-  }
-  
-  .navList li a{
-    transition: all 0.3s ease 0s;
-    text-decoration: none;
-  }
-  
-  .navList li{
-    font-family: 'Inter', sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
-    display: inline;
-    padding: 0rem 1.5rem;
-  }
-  
-  .navList{
-    margin-right: 2rem;
-  }
-  
-  .navList li a:hover{
-    color: #04D3DD;
-  }
-  
-  .logo{
-    cursor: pointer;
-    width: 8.75rem;
-    margin: 0px 4.25rem;
-  }
-  
-  
-  /* Student Navbar */
-  
-  .stuNav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #EEEEEE;
-    position: absolute;
-    top: 6rem;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    height: 3rem;
-    width: 85%;
-    z-index: 5;
-    border-radius: 15px;
-  }
-  
-  .stuNavList li a{
-    transition: all 0.3s ease 0s;
-    text-decoration: none;
-  }
-  
-  .stuNavList li{
-    font-family: 'Inter', sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
-    display: inline;
-    padding: 0rem 1.5rem;
-  }
-  
-  .stuNavList{
-    margin-right: 2rem;
-  }
-  
-  .stuNavList li a:hover{
-    color: #04D3DD;
-  }
-  
-  
-  
-  
-  .mainContainer{
-    margin-top: 5rem;
-    margin-left: 5rem;
-  }
-  
-  .btn1{
-    font-size: 20px;
-    margin-left: 7px;
-  }
 
-  hr{
-    margin-top: 2px;
-    border: 1px solid black;
-    border-width: 2px;
+.ele {
+  text-align: center;
+  border: 1px solid black;
+  border-left: 1px solid black;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-collapse: collapse;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+  color: black;
+}
+
+/* Navbar */
+
+.header {
+  height: 10rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eeeeee;
+  position: fixed;
+  height: 5rem;
+  width: 100%;
+  z-index: 10;
+}
+
+.navList li a {
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.navList li {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  display: inline;
+  padding: 0rem 1.5rem;
+}
+
+.navList {
+  margin-right: 2rem;
+}
+
+.navList li a:hover {
+  color: #04d3dd;
+}
+
+.logo {
+  cursor: pointer;
+  width: 8.75rem;
+  margin: 0px 4.25rem;
+}
+
+/* Student Navbar */
+
+.stuNav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eeeeee;
+  position: absolute;
+  top: 6rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  height: 3rem;
+  width: 85%;
+  z-index: 5;
+  border-radius: 15px;
+}
+
+.stuNavList li a {
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.stuNavList li {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  display: inline;
+  padding: 0rem 1.5rem;
+}
+
+.stuNavList {
+  margin-right: 2rem;
+}
+
+.stuNavList li a:hover {
+  color: #04d3dd;
+}
+
+.mainContainer {
+  margin-top: 5rem;
+  margin-left: 5rem;
+}
+
+.btn1 {
+  font-size: 20px;
+  margin-left: 7px;
+}
+
+hr {
+  margin-top: 2px;
+  border: 1px solid black;
+  border-width: 2px;
+}
+
+@media only screen and (max-width: 650px) {
+  form {
+    font-size: 0.75rem;
   }
+}
