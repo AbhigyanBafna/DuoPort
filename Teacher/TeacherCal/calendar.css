@@ -93,3 +93,66 @@
     position: block;
     height: 2rem;
   }
+
+  .assgns-title {
+    font-size: 36px;
+    margin: 10px;
+  }
+  
+  .assgns {
+    display: flex;
+    border: 2px solid black;
+    margin: 0px 20px;
+  }
+  
+  .assn_name {
+    margin: 10px 0px;
+  }
+  
+  .info {
+    margin: 20px;
+  }
+  
+  .deadline {
+    margin-top: 2rem;
+    margin-right: 30px;
+    height: fit-content;
+    border: 2px solid black;
+    padding: 0.5rem;
+  }
+  
+  .modal-body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15px 30px;
+    font-size: 17px;
+    padding: 4px;
+  }
+  
+  .container {
+    /*   background-color: #f2f2f2; */
+    padding: 5px 20px 15px 20px;
+    /*   border: 1px solid lightgray; */
+    border-radius: 4px;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  textarea {
+    width: 45%;
+    padding: 12px;
+    border: 1px solid #222831;
+    border: 5px;
+    background-color: #eeeeee;
+  }
+  
+  input[type="submit"] {
+    background-color: #4daea1;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 45%;
+    margin-top: 1.5rem;
+  }
+  
