@@ -1,0 +1,200 @@
+
+.container {
+margin-top: 5rem;
+  padding: 2em;
+}
+
+button,
+button::after {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+button {
+  background: none;
+  cursor: pointer;
+  border: 3px solid #00D8FF;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  font-size: 1.6em;
+  font-weight: bold;
+  margin: 1em auto;
+  padding: 2em 6em;
+  position: relative;
+  text-transform: uppercase;
+}
+
+button::before,
+button::after {
+  background: #00D8FF;
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+
+button:hover {
+  color: #202435;
+}
+
+.btn-3::after {
+  height: 0;
+  left: 50%;
+  top: 50%;
+  width: 0;
+}
+
+.btn-3:hover:after {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+form{
+  display: inline;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+  color: black;
+}
+
+/* Navbar */
+
+.header{
+  height: 0rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #EEEEEE;
+  position: fixed;
+  height: 5rem;
+  width: 100%;
+  z-index: 10;
+}
+
+.navList li a{
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.navList li{
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  display: inline;
+  padding: 0rem 1.5rem;
+}
+
+.navList{
+  margin-right: 2rem;
+}
+
+.navList li a:hover{
+  color: #04D3DD;
+}
+
+.logo{
+  cursor: pointer;
+  width: 8.75rem;
+  margin: 0px 4.25rem;
+}
+
+
+/* Student Navbar */
+
+.stuNav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #EEEEEE;
+  position: absolute;
+  top: 6rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  height: 3rem;
+  width: 85%;
+  z-index: 10;
+  border-radius: 15px;
+}
+
+.stuNavList li a{
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.stuNavList li{
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  display: inline;
+  padding: 0rem 1.5rem;
+}
+
+.stuNavList{
+  margin-right: 2rem;
+}
+
+.stuNavList li a:hover{
+  color: #04D3DD;
+}
+
+
+
+
+.stuDash{
+  margin-top: 2rem;
+  margin-left: 2rem;
+  border: 2px solid #000;
+  padding: 15px;
+  overflow-y: auto;
+  height: 33rem;
+  width: 60rem;
+}
+
+.notice{
+  margin-top: 1rem;
+  margin-left: 1rem;
+  border: 2px solid #000;
+  padding: 15px;
+  overflow-y: auto;
+  height: 7rem;
+  width: 56rem;
+  font-size: 3rem;
+}
+
+.stuBoard{
+  float: right;
+  margin-top: -35rem;
+  margin-right: 2rem;
+  border: 2px solid #000;
+  padding: 15px;
+  height: 33rem;
+  width: 19rem;
+}
+
+.stuAssign{
+  border: 2px solid #000;
+  padding: 15px;
+  overflow-y: auto;
+  height: 13rem;
+  width: 17rem;
+}
+
+.stuTest{
+  margin-top: 1.5rem ;
+  border: 2px solid #000;
+  padding: 15px;
+  overflow-y: auto;
+  height: 14rem;
+  width: 17rem;
+}
