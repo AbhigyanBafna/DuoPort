@@ -122,7 +122,7 @@
   overflow: hidden;
   transition: .5s;
   margin-top: 20px;
-  letter-spacing: 4px
+  letter-spacing: 4px;
 }
 
 .btn__submit:hover {

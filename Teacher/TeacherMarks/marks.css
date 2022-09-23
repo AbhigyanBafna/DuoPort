@@ -1,3 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+  color: black;
+  overflow-x: hidden;
+}
+
 input[type="text"],
 input[type="number"] {
   background-color: #eeeeee;
@@ -134,4 +142,144 @@ hr {
   form {
     font-size: 0.75rem;
   }
+}
+
+td {
+  border: 1px solid black;
+}
+
+.table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin-left: 2rem;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.form {
+  margin-left: 2rem;
+}
+
+.ele {
+  text-align: center;
+  border: 1px solid black;
+  border-left: 1px solid black;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-collapse: collapse;
+}
+
+.btn_submit {
+  font-size: 1rem;
+  left: 2rem;
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: black;
+  color: #03e9f4;
+  border: none;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s;
+  margin-top: 20px;
+  letter-spacing: 4px;
+  border-radius: 5px;
+}
+
+.btn_submit:hover {
+  background: #03e9f4;
+  color: rgb(10, 11, 21);
+  border-radius: 5px;
+}
+
+hr {
+  margin-top: 1rem;
+  border: none;
+  background-color: #04d3dd;
+  border-width: 2px;
+  height: 0.5rem;
+}
+
+/* Navbar */
+
+.header {
+  height: 10rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eeeeee;
+  position: fixed;
+  height: 5rem;
+  width: 100%;
+  z-index: 10;
+}
+
+.navList li a {
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.navList li {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  display: inline;
+  padding: 0rem 1.5rem;
+}
+
+.navList {
+  margin-right: 2rem;
+}
+
+.navList li a:hover {
+  color: #04d3dd;
+}
+
+.logo {
+  cursor: pointer;
+  width: 8.75rem;
+  margin: 0px 4.25rem;
+}
+
+/* Student Navbar */
+
+.stuNav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eeeeee;
+  position: absolute;
+  top: 6rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  height: 3rem;
+  width: 85%;
+  z-index: 5;
+  border-radius: 15px;
+}
+
+.stuNavList li a {
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.stuNavList li {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  display: inline;
+  padding: 0rem 1.5rem;
+}
+
+.stuNavList {
+  margin-right: 2rem;
+}
+
+.stuNavList li a:hover {
+  color: #04d3dd;
 }
