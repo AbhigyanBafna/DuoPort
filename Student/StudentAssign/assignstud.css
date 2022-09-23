@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.assgns-title {
+  font-size: 36px;
+  margin: 10px;
+}
+
+.assgns {
+  display: flex;
+  border: 2px solid black;
+  margin: 0px 20px;
+}
+
+.assn_name {
+  margin: 10px 0px;
+}
+
+.info {
+  margin: 20px;
+}
+
+.deadline {
+  margin-top: 1rem;
+  margin-right: 30px;
+  height: fit-content;
+  border: 2px solid black;
+  padding: 0.5rem;
+}
