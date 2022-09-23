@@ -9,6 +9,7 @@
 
 .header{
   height: 10rem;
+  position: fixed;
 }
 
 .nav {
@@ -64,7 +65,7 @@
   margin: 0 auto;
   height: 3rem;
   width: 85%;
-  z-index: 10;
+  z-index: 5;
   border-radius: 15px;
 }
 
@@ -88,9 +89,6 @@
 .stuNavList li a:hover{
   color: #04D3DD;
 }
-
-
-
 
 .mainContainer{
   margin-top: 5rem;
@@ -142,5 +140,9 @@ button:hover {
   left: 0;
   top: 0;
   width: 100%;
+}
+
+.mainContainer{
+  margin: 1rem;
 }
 
