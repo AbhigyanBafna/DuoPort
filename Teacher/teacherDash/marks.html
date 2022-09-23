@@ -5,26 +5,52 @@
     <link rel="stylesheet" href="marks.css">
 </head>
 <body>
+    <body>
+        <div class = header>
+    
+            <div class = nav>
+                <img class = "logo" src="../../images/lightMode.svg" alt="logo">
+                <ul class = "navList">
+                    <li class = "navItem"> <a href="#"> (Name) </a></li>
+                    <li class = "navItem"> <a href="#"> Logout </a></li>
+                    <li class = "navItem"> <a href="#"> (NightMode Toggle) </a></li>
+                </ul>
+            </div>
+            <div class = "stuNav">
+                <ul class = "stuNavList">
+                    <li class = "stuNavItem"> <a href="../studentDash/stuDash.html"> Dashboard </a></li>
+                    <li class = "stuNavItem"> <a href="../StudentCal/calendar.html"> Calender </a></li>
+                    <li class = "stuNavItem"> <a href="#"> Assignments </a></li>
+                    <li class = "stuNavItem"> <a href="../StudentLib/lib.html"> Library </a></li>
+                </ul>
+            </div>
+    
+        </div>
+    
+
+
+
      <div class="container">
 <h1>Student Data</h1>
 
 <form method="POST" name="sample">
 <br>
-    Roll No: <br> <input type="number" name="rollno" class="rollno"><br><br>
-    Name: <br> <input type="text" name="name" class="name"><br><br>
-    PT1: <br> <input type="text" name="PT1" class="pt1"><br><br>
-    PT2: <br> <input type="text" name="PT2"class="pt2"><br><br>
-    Semester: <br> <input type="text" name="Semester" class="sem" >
+&nbsp; Roll No:<br> &nbsp;<input type="number" name="rollno" class="rollno"><br><br>
+&nbsp; Name:<br>&nbsp;<input type="text" name="name" class="name"><br><br>
+&nbsp; PT1:<br>&nbsp;<input type="text" name="PT1" class="pt1"><br><br>
+&nbsp; PT2:<br>&nbsp;<input type="text" name="PT2"class="pt2"><br><br>
+&nbsp; Semester:<br>&nbsp;<input type="text" name="Semester" class="sem" >
     <br><br>
-    <input type="button" name="add" value="Add Data" onclick="addStudent();" class="btn btn-success"><hr>
-
+    <input type="button" name="add" class="btn1" value="Add Data" onclick="addStudent();" class="btn btn-success">
+    <hr>
+    <br>
             <table id="tbl" class="table" >
                 <thead>
                 <th class="ele">Rollno</th> 
                 <th class="ele">Name</th>
                 <th class="ele">PT1</th>
                 <th class="ele">PT2</th>
-                <th class="ele">Semester</th>    
+                <th class="ele">Semester</th>       
                 <th class="ele">Update</th>
                
                 </thead>
@@ -128,6 +154,7 @@
     
     </script>
 </div>
+<input type="button" name="add" class="btn1" value="Save Data" onclick="addStudent();" class="btn btn-success">
     </body>
 </html>
 
