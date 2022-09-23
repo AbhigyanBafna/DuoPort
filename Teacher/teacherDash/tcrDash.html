@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="tcrDash.css">
+    <title>DuoPort</title>
 </head>
 <body>
     <div class = header>
@@ -16,15 +16,6 @@
                 <li class = "navItem"> <a href="#"> (Name) </a></li>
                 <li class = "navItem"> <a href="#"> Logout </a></li>
                 <li class = "navItem"> <a href="#"> (NightMode Toggle) </a></li>
-            </ul>
-        </div>
-        <div class = "spacing">cwaece</div>
-        <div class = "stuNav">
-            <ul class = "stuNavList">
-                <li class = "stuNavItem"> <a href="#"> Dashboard </a></li>
-                <li class = "stuNavItem"> <a href="#"> Calender </a></li>
-                <li class = "stuNavItem"> <a href="#"> Assignments </a></li>
-                <li class = "stuNavItem"> <a href="#"> Library </a></li>
             </ul>
         </div>
         <div class = "stuNav">
@@ -39,16 +30,27 @@
     </div>
     <div class="mainContainer">
         <div class = "tcrClasses">
-            <button class="btn-3">Semester 1</button>
-            <button class="btn-3">Semester 2</button>
-            <button class="btn-3">Semester 3</button>
-            <button class="btn-3">Semester 4</button>
-            <button class="btn-3">Semester 5</button>
-            <button class="btn-3">Semester 6</button>
-            <button class="btn-3">Semester 7</button>
-            <button class="btn-3">Semester 8</button>
+            <form>
+                <button type="submit" class="btn-3">Class 1</button>
+             </form>
+             <form action="http://127.0.0.1:5500/Student/StudentLib/sem1.html">
+                <button type="submit" class="btn-3">Class 2</button>
+             </form>
+             <form action="http://127.0.0.1:5500/Student/StudentLib/sem1.html">
+                <button type="submit" class="btn-3">Class 3</button>
+             </form>
+             <form action="http://127.0.0.1:5500/Student/StudentLib/sem1.html">
+                <button type="submit" class="btn-3">Class 4</button>
+             </form>
+             <form action="http://127.0.0.1:5500/Student/StudentLib/sem1.html">
+                <button type="submit" class="btn-3">Class 5</button>
+             </form>
+             <form action="http://127.0.0.1:5500/Student/StudentLib/sem1.html">
+                <button type="submit" class="btn-3">Class 6</button>
+             </form>
         </div>
     </div>
+
     <script src="app.js"></script>
 </body>
 </html>

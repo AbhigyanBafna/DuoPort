@@ -9,7 +9,6 @@
 
 .header{
   height: 10rem;
-  position: fixed;
 }
 
 .nav {
@@ -90,8 +89,12 @@
   color: #04D3DD;
 }
 
+
+
+
 .mainContainer{
   margin-top: 5rem;
+  margin-left: 5rem;
 }
 
 button,
@@ -142,7 +145,7 @@ button:hover {
   width: 100%;
 }
 
-.mainContainer{
-  margin: 1rem;
+form{
+  display: inline;
+  margin-left: 100px;
 }
-

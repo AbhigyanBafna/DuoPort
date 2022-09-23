@@ -64,7 +64,7 @@
   margin: 0 auto;
   height: 3rem;
   width: 85%;
-  z-index: -10;
+  z-index: 5;
   border-radius: 15px;
 }
 
@@ -94,6 +94,7 @@
 
 .mainContainer{
   margin-top: 5rem;
+  margin-left: 5rem;
 }
 
 button,
