@@ -1,14 +1,14 @@
 *{
   margin: 0;
   padding: 0;
-  font-family: Helvetica, sans-serif;
+  font-family: Roboto, sans-serif;
   color: black;
 }
 
 /* Navbar */
 
 .header{
-  height: 10rem;
+  height: 3rem;
 }
 
 .nav {
@@ -47,46 +47,6 @@
   cursor: pointer;
   width: 8.75rem;
   margin: 0px 4.25rem;
-}
-
-
-/* Student Navbar */
-
-.stuNav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #EEEEEE;
-  position: absolute;
-  top: 6rem;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  height: 3rem;
-  width: 85%;
-  z-index: 5;
-  border-radius: 15px;
-}
-
-.stuNavList li a{
-  transition: all 0.3s ease 0s;
-  text-decoration: none;
-}
-
-.stuNavList li{
-  font-family: 'Inter', sans-serif;
-  font-size: 1rem;
-  font-weight: bold;
-  display: inline;
-  padding: 0rem 1.5rem;
-}
-
-.stuNavList{
-  margin-right: 2rem;
-}
-
-.stuNavList li a:hover{
-  color: #04D3DD;
 }
 
 

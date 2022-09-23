@@ -1,7 +1,7 @@
 *{
   margin: 0;
   padding: 0;
-  font-family: Helvetica, sans-serif;
+  font-family: Roboto, sans-serif;
   color: black;
 }
 
@@ -147,5 +147,5 @@ button:hover {
 
 form{
   display: inline;
-  margin-left: 100px;
+  margin-left: 3rem;
 }
