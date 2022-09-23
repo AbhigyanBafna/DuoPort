@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Table</title>
+    <link rel="stylesheet" href="marks.css">
+</head>
+<body>
+     <div class="container">
+<h1>Student Data</h1>
+
+<form method="POST" name="sample">
+<br>
+    Roll No: <br> <input type="number" name="rollno" class="rollno"><br><br>
+    Name: <br> <input type="text" name="name" class="name"><br><br>
+    PT1: <br> <input type="text" name="PT1" class="pt1"><br><br>
+    PT2: <br> <input type="text" name="PT2"class="pt2"><br><br>
+    Semester: <br> <input type="text" name="Semester" class="sem" >
+    <br><br>
+    <input type="button" name="add" value="Add Data" onclick="addStudent();" class="btn btn-success"><hr>
+
+            <table id="tbl" class="table" >
+                <thead>
+                <th class="ele">Rollno</th> 
+                <th class="ele">Name</th>
+                <th class="ele">PT1</th>
+                <th class="ele">PT2</th>
+                <th class="ele">Semester</th>    
+                <th class="ele">Update</th>
+               
+                </thead>
+                
+                 <tbody>
+                     
+                 </tbody>
+             </table>
+
+</form>
+
+ <script type="text/javascript">
+       
+    function addStudent()
+    { 
+        var rollno=document.sample.rollno.value; 
+        var name=document.sample.name.value;
+        var PT1=document.sample.PT1.value;
+        var PT2=document.sample.PT2.value;
+        var Semester=document.sample.Semester.value; 
+
+        
+        var tr = document.createElement('tr');
+        
+        var td1 = tr.appendChild(document.createElement('td'));
+        var td2 = tr.appendChild(document.createElement('td'));
+        var td4 = tr.appendChild(document.createElement('td'));
+        var td5 = tr.appendChild(document.createElement('td'));
+        var td6 = tr.appendChild(document.createElement('td'));
+        var td7 = tr.appendChild(document.createElement('td'));
+        
+        
+        td1.innerHTML=rollno;
+        td2.innerHTML=name;
+        td7.innerHTML='<input type="button" name="up" value="Update" onclick="UpStud(this);" class="btn btn-primary">'
+        td4.innerHTML=PT1;
+        td5.innerHTML=PT2;
+        td6.innerHTML=Semester;
+        document.getElementById("tbl").appendChild(tr);
+    }
+
+    function UpStud(stud){
+        var rollno=document.sample.rollno.value; 
+        var name=document.sample.name.value; 
+        var s = stud.parentNode.parentNode;
+        var tr = document.createElement('tr');
+        var PT1=document.sample.PT1.value;      
+        var PT2=document.sample.PT2.value;  
+        var Semester=document.sample.Semester.value;
+        
+        var td1 = tr.appendChild(document.createElement('td'));
+        var td2 = tr.appendChild(document.createElement('td'));
+        var td4 = tr.appendChild(document.createElement('td'));
+        var td5 = tr.appendChild(document.createElement('td'));
+        var td6 = tr.appendChild(document.createElement('td'));
+        var td7 = tr.appendChild(document.createElement('td'));
+        
+        
+        td1.innerHTML='<input type="number" name="rollno1">';
+        td2.innerHTML='<input type="text" name="name1">';
+        td7.innerHTML='<input type="button" name="up" value="Update" onclick="addUpStud(this);" class="btn btn-primary">'
+        td4.innerHTML='<input type="number" name="PT1">';
+        td5.innerHTML='<input type="number" name="PT2">';
+        td6.innerHTML='<input type="number" name="Semester">';
+        document.getElementById("tbl").replaceChild(tr, s);
+    }
+
+    function addUpStud(stud){
+        var rollno=document.sample.rollno1.value; 
+        var name=document.sample.name1.value; 
+        var s = stud.parentNode.parentNode;
+        var tr = document.createElement('tr');
+        var PT1=document.sample.PT1.value; 
+        var PT2=document.sample.PT2.value; 
+        var Semester=document.sample.Semester.value; 
+
+        
+        var td1 = tr.appendChild(document.createElement('td'));
+        var td2 = tr.appendChild(document.createElement('td'));
+        var td5 = tr.appendChild(document.createElement('td'));
+        var td4 = tr.appendChild(document.createElement('td'));
+        var td6 = tr.appendChild(document.createElement('td'));
+        var td7 = tr.appendChild(document.createElement('td'));
+
+        
+        
+        td1.innerHTML=rollno;
+        td2.innerHTML=name;
+        td7.innerHTML='<input type="button" name="up" value="Update" onclick="UpStud(this);" class="btn btn-primary">'
+        td4.innerHTML=PT1;
+        td5.innerHTML=PT2;
+        td6.innerHTML=Semester;
+        document.getElementById("tbl").replaceChild(tr, s);
+    }
+
+    function delStudent(Stud){
+        var s=Stud.parentNode.parentNode;
+        s.parentNode.removeChild(s);
+    }
+    
+    
+    </script>
+</div>
+    </body>
+</html>
+
