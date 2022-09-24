@@ -1,4 +1,24 @@
-<!DOCTYPE html>
+<html>
+    <head> 
+    </head>
+    <style>
+        th{
+            border: 2px solid;
+            padding: 10px;
+            background: #04d3dd;
+        }
+        table{
+            border: 2px solid;
+            margin-left: 80px;
+        }
+        td{
+            border: 2px solid;
+            text-align: center;
+            background: #eeeeee;
+        }
+    </style>
+    <body>
+    <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -53,3 +73,45 @@
     </div>
   </body>
 </html>
+
+        <table border="2">
+        <tr>
+        <th>Assignment Name</th>
+        <th>Subject</th>
+        <th>Description</th>
+        <th>Submission Date</th>
+        </tr>
+        
+
+
+<?php
+
+    $server = "localhost";
+    $username = "root";
+    $password = "";
+
+    $con = mysqli_connect($server, $username, $password);
+
+    $sql = "SELECT * FROM `csh`.`assignments`";
+    $data = mysqli_query($con, $sql);
+    $total = mysqli_num_rows($data);
+
+
+    
+
+    if($total > 0){
+        while($row = mysqli_fetch_assoc($data)){
+            echo "<tr><td>" . $row['name'] . "</td><td>" . $row['subject'] . "</td><td>" . $row['description'] . "</td><td>" . $row['date'] . "</td></tr>";
+            echo "<br>";
+        }
+    }
+
+    $con->close();
+
+?>
+</table>
+    </body>
+    
+</html>
+
+
