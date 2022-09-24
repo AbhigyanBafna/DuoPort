@@ -23,8 +23,7 @@
         <div class = nav>
             <img class = "logo" src="../../images/lightMode.svg" alt="logo">
             <ul class = "navList">
-                <li class = "navItem"> <a href="#"> (Name) </a></li>
-                <li class = "navItem"> <a href="#"> Logout </a></li>
+                <li class = "navItem"> <a href="../../Login/login.html"> Logout </a></li>
             </ul>
         </div>
         <div class = "stuNav">
@@ -40,6 +39,7 @@
     <div class="student_H">
         <div id="calendar"></div>
     </div>
+    
     <div class="container">
         <!-- Trigger the modal with a button -->
   
@@ -52,24 +52,23 @@
                 <!--           <h4 class="modal-title">Assignment to be added</h4> -->
               </div>
               <div class="modal-body">
-                <form class="container">
+                <form action="assignmentadd.php" method="POST">
                   <h1 class="main-heading">Assignment to be assigned</h1>
-                  <p>Required Fields are followed by *</p>
                   <label for="assignname">Assignment Name: *</label><br />
                   <input
                     type="text"
                     id="assignname"
-                    name="Assignment"
+                    name="assignname"
                     required
                   /><br />
                   <label for="subject">Subject: *</label><br />
-                  <input type="text" id="subject" name="Subject" required /><br />
+                  <input type="text" id="subject" name="subject" required /><br />
                   <label for="description">Description:</label><br />
-                  <textarea rows="10" cols="30" name="Description"> </textarea
+                  <textarea rows="10" cols="30" name="description"> </textarea
                   ><br />
-                  <label for="date">Date: *</label><br />
-                  <input type="date" id="date" name="Date" required /><br />
-                  <input type="submit" value="Assign" onclick="addStudent()" />
+                  <label for="date">Submission Date: *</label><br />
+                  <input type="date" id="date" name="date" required /><br />
+                  <input type="submit" value="Assign"/>
                 </form>
               </div>
               <div class="modal-footer">
@@ -78,7 +77,6 @@
                   class="btn btn-default"
                   data-dismiss="modal"
                 >
-                  Close
                 </button>
               </div>
             </div>
