@@ -88,12 +88,9 @@
 .stuNavList li a:hover{
   color: #04D3DD;
 }
-
-
-
-.assgns-title {
-  font-size: 36px;
-  margin: 10px;
+ 
+h1{
+  margin-left: 80px;
 }
 
 .assgns {
