@@ -26,7 +26,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assignstud.css" />
     <link rel="icon" type="image/x-icon" href="../../images/favicon.ico" />
-    <script src="assgnstud.js"></script>
+    <script src="./assignments.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -38,8 +38,7 @@
       <div class = nav>
           <img class = "logo" src="../../images/lightMode.svg" alt="logo">
           <ul class = "navList">
-              <li class = "navItem"> <a href="#"> (Name) </a></li>
-              <li class = "navItem"> <a href="#"> Logout </a></li>
+              <li class = "navItem"> <a href="../../Login/login.html"> Logout </a></li>
           </ul>
       </div>
       <div class = "stuNav">
@@ -68,49 +67,48 @@
       </div>
       <span class="deadline">
         <h3>Deadline</h3>
+        <p id="demo"></p>
         
       </span>
     </div>
-  </body>
-</html>
+    <br>
+  <table border="2">
+    <tr>
+      <th>Assignment Name</th>
+      <th>Subject</th>
+      <th>Description</th>
+      <th>Submission Date</th>
+    </tr>
+          
+    <tr>
+      <td>Vector Graphics</td>
+      <td> CG </td>
+      <td>&nbsp;&nbsp;&nbsp; Design variations of Vector Graphics done in class today &nbsp;&nbsp;&nbsp;</td>
+      <td> 12/12/22</td>
+    </tr>
 
-        <table border="2">
-        <tr>
-        <th>Assignment Name</th>
-        <th>Subject</th>
-        <th>Description</th>
-        <th>Submission Date</th>
-        </tr>
-        
+    <tr>
+      <td>JavaScript</td>
+      <td>PCPF</td>
+      <td>&nbsp;&nbsp;&nbsp; Design a simple day to day expense tracker &nbsp;&nbsp;&nbsp;</td>
+      <td> 10/10/22</td>
+    </tr>
 
+    <tr>
+      <td>GUI</td>
+      <td>Java</td>
+      <td>&nbsp;&nbsp;&nbsp; Create a functional GUI Application solving a real world issue &nbsp;&nbsp;&nbsp;</td>
+      <td> 21/9/22</td>
+    </tr>
 
-<?php
-
-    $server = "localhost";
-    $username = "root";
-    $password = "";
-
-    $con = mysqli_connect($server, $username, $password);
-
-    $sql = "SELECT * FROM `csh`.`assignments`";
-    $data = mysqli_query($con, $sql);
-    $total = mysqli_num_rows($data);
-
-
-    
-
-    if($total > 0){
-        while($row = mysqli_fetch_assoc($data)){
-            echo "<tr><td>" . $row['name'] . "</td><td>" . $row['subject'] . "</td><td>" . $row['description'] . "</td><td>" . $row['date'] . "</td></tr>";
-            echo "<br>";
-        }
-    }
-
-    $con->close();
-
-?>
-</table>
-    </body>
+    <tr>
+      <td>Stack</td>
+      <td>DSA</td>
+      <td>&nbsp;&nbsp;&nbsp; Create a useful program using Stack Data Structure &nbsp;&nbsp;&nbsp;</td>
+      <td> 19/11/22</td>
+    </tr>
+  </table>
+</body>
     
 </html>
 
